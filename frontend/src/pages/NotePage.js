@@ -23,7 +23,7 @@ const NotePage = () => {
     }
 
     const creatNote = async () => {
-        fetch(`/api/notes/create/`, {
+        fetch(`/api/notes/`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(note)
@@ -31,7 +31,7 @@ const NotePage = () => {
     }
 
     const updateNote = async () => {
-        fetch(`/api/notes/${id}/update/`, {
+        fetch(`/api/notes/${id}/`, {
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(note)
@@ -39,7 +39,7 @@ const NotePage = () => {
     }
 
     const deleteNote = async () => {
-        fetch(`/api/notes/${id}/delete/`, {
+        fetch(`/api/notes/${id}/`, {
             method: 'DELETE',
             headers: {'Content-Type': 'application/json'}
         })
