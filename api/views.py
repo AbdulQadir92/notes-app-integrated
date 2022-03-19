@@ -32,7 +32,6 @@ def getNote(request, pk):
 
 
 
-
 #     ## REST / RESTFUL API without utils.py ##
 # @api_view(['GET', 'POST'])
 # def getNotes(request):
